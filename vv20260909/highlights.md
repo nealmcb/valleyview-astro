@@ -7,9 +7,10 @@
 
 ## Why these two nights are special
 
-**No Moon.** New Moon is Sept 11, so both nights are essentially moonless —
-under Valley View's [Bortle 2](https://en.wikipedia.org/wiki/Bortle_scale)
-skies that's about as dark as the sky ever gets.
+**No Moon.** New Moon falls on Sept 10, so on both nights the Moon is gone
+before the sky is fully dark — under Valley View's
+[Bortle 2](https://en.wikipedia.org/wiki/Bortle_scale) skies that's about as
+dark as it ever gets.
 
 **When it gets dark (MDT):**
 
@@ -57,9 +58,9 @@ swings higher.
   hundred thousand stars in one ball.
 
 - **Saturn** rises in the southeast around 8:30 p.m. and is well up by
-  10–10:30. Rings (tilted only a few degrees now) plus its big moon **Titan**.
-  Faint blue **Neptune** is in the same part of Pisces — a tiny dot in the
-  eyepiece.
+  10–10:30. The rings are nearly edge-on right now — a thin bright line — plus
+  its big moon **Titan**. Faint blue **Neptune** sits about a fist-width away
+  in Pisces for anyone who wants one more planet in the eyepiece.
 
 ---
 
