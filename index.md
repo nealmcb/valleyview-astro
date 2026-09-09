@@ -16,12 +16,11 @@ PlaneWave telescope, and a lot of universe.
 
 - **[Astronomy Evening at Valley View](astro-evening-vv.html)** — the deep
   version: black holes, quasars, Einstein rings, the cosmic distance ladder,
-  and why you're made of stardust.
+  and the stardust we're made of.
 
 ## Reference
 
-- **[The Valley View telescopes](telescopes.html)** — the three scopes in the
-  shed.
+- **[The Valley View telescopes](telescopes.html)** — including the amazing 20" Planewave.
 
 ---
 

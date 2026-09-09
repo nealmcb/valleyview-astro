@@ -1,9 +1,7 @@
 # 🌌 Astronomy Evening at Valley View Hot Springs  
-*Tour of the Universe with the 20" PlaneWave Telescope*  
+*Tour of the 3D Universe far from light pollution with eyes, binocs and an amazing 20" PlaneWave Telescope*  
 
 ---
-
-Framing options:
 
 We often dream of travelling the world and seeing its many wonders,
 but few people have the time or money to see much of it.  Even though
