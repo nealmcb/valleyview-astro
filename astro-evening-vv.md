@@ -132,7 +132,7 @@ radiation from the Big Bang.
 ## 6. **Cosmic Highlights**
 - **M31 Andromeda Galaxy:**
   - Distance: ~2.5 Mly.
-  - Angular size: 8 full Moons across (~3°).
+  - Angular size: ~3° across (about 6 full Moons); fainter outer disk traces to ~5° in deep exposures.
 - **3C273 (brightest quasar):** near Eta Virgo
   - Distance: ~2.4 Gly (z=0.158).
   - Varies between mag 12.5–13.5. both daily and yearly.

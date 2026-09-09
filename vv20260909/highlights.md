@@ -47,10 +47,12 @@ The sky keeps getting better through the evening as the summer
   different distances — Altair 17 light-years, Vega 25, Deneb over 1,500.
 
 - **[Andromeda Galaxy (M31)](https://en.wikipedia.org/wiki/Andromeda_Galaxy)**
-  clears the mountains to the east-northeast about **7:50 p.m.** and is well up
-  by the time the sky is fully dark. It's the farthest thing visible to the
-  unaided eye — 2.5 million light-years — and several times wider than the full
-  Moon.
+  clears the mountains to the east-northeast about **7:50 p.m.** To the naked
+  eye it's a faint grey smudge — but that smudge is a whole other galaxy, 2.5
+  million light-years away, and the farthest thing you can see without a
+  telescope. Take a long exposure through a good scope and it spans **about six
+  times the width of the full Moon** (roughly 3°), fainter outer arms reaching
+  further still.
 
 - **[Venus](https://en.wikipedia.org/wiki/Venus)**, brilliant but very low in
   the west — it sets less than 1½ hours after the Sun. Catch it in binoculars
