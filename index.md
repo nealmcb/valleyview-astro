@@ -4,13 +4,11 @@ Star-party observing notes for **Valley View Hot Springs**, Colorado —
 [Bortle 2](https://en.wikipedia.org/wiki/Bortle_scale) dark skies, the 20"
 PlaneWave telescope, and a lot of universe.
 
-## Tonight
+## Nightly highlights
 
-- **[Sky highlights — nights of Sept 9 & 10, 2026](vv20260909/highlights.html)**
-  — the short, easy version.
-- Satellite pass lists (brighter than mag 3):
-  **[Tue Sept 9](vv20260909/satellites.html)** ·
-  **[Wed Sept 10](vv20260910/satellites.html)**
+- **[Sept 9–10, 2026](vv20260909/highlights.html)** — the short, easy version.
+  Satellite passes: [Tue Sept 9](vv20260909/satellites.html) ·
+  [Wed Sept 10](vv20260910/satellites.html)
 
 ## The full tour
 
