@@ -31,9 +31,11 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import math
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+import numpy as np
 from skyfield import almanac
 from skyfield.api import Loader, wgs84, Star
 
@@ -66,6 +68,41 @@ PLANETS = {
     "Uranus": "uranus barycenter",
     "Neptune": "neptune barycenter",
 }
+
+# Measured skyline altitude vs azimuth for the ridge east of the site
+# (the Sangre de Cristos), from the "Horizon to the east" section of the
+# Valley View telescopes doc. Only the eastern half is measured; elsewhere
+# we fall back to a flat FLAT_HORIZON and the times are just geometric.
+EAST_HORIZON = [
+    (14, 10.0), (26, 10.5), (52, 18.0), (82, 19.5),
+    (110, 12.5), (136, 9.5), (162, 1.5),
+]
+FLAT_HORIZON = -0.57  # refracted horizon for a point ~2600 m up
+
+
+def horizon_alt(az_deg):
+    """Local skyline altitude (deg) at a given azimuth."""
+    xs = [a for a, _ in EAST_HORIZON]
+    if xs[0] <= az_deg <= xs[-1]:
+        return float(np.interp(az_deg, xs, [h for _, h in EAST_HORIZON]))
+    return FLAT_HORIZON
+
+
+def ridge_rise_set(site, ts, t0, t1, body, tz):
+    """First time `body` climbs above the local skyline, and when it drops
+    back below, within [t0, t1]. Returns (rise_str, set_str)."""
+    n = int((t1.tt - t0.tt) * 24 * 60) + 1          # 1-minute steps
+    times = ts.tt_jd(np.linspace(t0.tt, t1.tt, n))
+    alt, az, _ = site.at(times).observe(body).apparent().altaz()
+    hz = np.array([horizon_alt(a) for a in az.degrees])
+    up = alt.degrees > hz
+    rise = sett = None
+    for i in range(1, n):
+        if up[i] and not up[i - 1]:
+            rise = rise or fmt(times[i].utc_datetime(), tz)
+        if up[i - 1] and not up[i]:
+            sett = fmt(times[i].utc_datetime(), tz)
+    return rise or "--", sett or "--"
 
 
 def fmt(t, tz):
@@ -128,7 +165,7 @@ def main():
 
     # --- Moon ----------------------------------------------------------
     phase = almanac.moon_phase(eph, ts.from_datetime(eve.replace(hour=21)))
-    illum = 0.5 * (1 - __import__("math").cos(phase.radians))
+    illum = 0.5 * (1 - math.cos(phase.radians))
     print(f"Moon: phase angle {phase.degrees:.0f} deg, ~{illum*100:.0f}% illuminated")
     fr = almanac.risings_and_settings(eph, moon, obs)
     mt, me = almanac.find_discrete(t0, t1, fr)
@@ -144,26 +181,26 @@ def main():
     tt = ts.from_datetime(tour_dt)
     print(f"At {args.tour_time} local ({tour_dt.date()}):")
 
-    def rise_set_transit(body, label):
+    print(f"  {'object':<28} {'alt':>6}   flat-horizon      over-the-ridge")
+    print(f"  {'':<28} {'@tour':>6}   rise    set       rise    set")
+
+    def report(body, label):
         fr = almanac.risings_and_settings(eph, body, obs)
         rt, re = almanac.find_discrete(t0, t1, fr)
         rr = {("rise" if e else "set"): fmt(t.utc_datetime(), tz)
               for t, e in zip(rt, re)}
         alt = site.at(tt).observe(body).apparent().altaz()[0].degrees
-        extra = f"  rise {rr.get('rise','--')}  set {rr.get('set','--')}"
-        print(f"  {label:<28} alt {alt:+5.1f} deg{extra}")
+        rr_r, rs_r = ridge_rise_set(site, ts, t0, t1, body, tz)
+        print(f"  {label:<28} {alt:+5.1f}   {rr.get('rise','--'):>5}   {rr.get('set','--'):>5}"
+              f"     {rr_r:>5}   {rs_r:>5}")
 
     for name, key in PLANETS.items():
-        rise_set_transit(eph[key], name)
+        report(eph[key], name)
     print()
     for name, (ra_h, dec_d) in DSOS.items():
-        star = Star(ra_hours=ra_h, dec_degrees=dec_d)
-        alt = site.at(tt).observe(star).apparent().altaz()[0].degrees
-        fr = almanac.risings_and_settings(eph, star, obs)
-        rt, re = almanac.find_discrete(t0, t1, fr)
-        rr = {("rise" if e else "set"): fmt(t.utc_datetime(), tz)
-              for t, e in zip(rt, re)}
-        print(f"  {name:<28} alt {alt:+5.1f} deg  rise {rr.get('rise','--')}  set {rr.get('set','--')}")
+        report(Star(ra_hours=ra_h, dec_degrees=dec_d), name)
+    print("\n  (over-the-ridge uses the measured east skyline az 14-162 deg;"
+          "\n   elsewhere it falls back to a flat horizon.)")
 
 
 if __name__ == "__main__":
