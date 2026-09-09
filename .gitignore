@@ -1,0 +1,4 @@
+# Skyfield ephemeris cache (downloaded on first run of bin/sky_timeline.py)
+bin/*.bsp
+*.bsp
+__pycache__/

@@ -1,0 +1,39 @@
+/* Valley View astronomy — dark, readable, prints fine. */
+:root {
+  --bg: #0b0d17;
+  --fg: #d7dceb;
+  --muted: #8b93ab;
+  --accent: #ffd27f;
+  --link: #8ec9ff;
+  --rule: #2a2f45;
+}
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2rem 1.1rem 4rem;
+}
+h1, h2, h3 { line-height: 1.25; font-weight: 650; }
+h1 { font-size: 1.7rem; margin: 0 0 .3rem; }
+h2 { font-size: 1.25rem; margin: 2.2rem 0 .6rem; color: var(--accent); }
+h3 { font-size: 1.05rem; margin: 1.6rem 0 .4rem; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
+em { color: var(--muted); }
+strong { color: #fff; }
+code { background: #171a2b; padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+pre { background: #171a2b; padding: .9rem 1rem; border-radius: 8px; overflow-x: auto; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 1rem 0; padding: .2rem 0 .2rem 1rem;
+  border-left: 3px solid var(--rule); color: var(--muted);
+}
+table { border-collapse: collapse; margin: 1rem 0; width: 100%; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--rule); padding: .4rem .7rem; text-align: left; }
+th { background: #141728; color: var(--accent); }
+img { max-width: 100%; height: auto; }
+small { color: var(--muted); }
