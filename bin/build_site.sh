@@ -14,8 +14,9 @@ PAGES=(
   "index.md|Valley View astronomy"
   "astro-evening-vv.md|Astronomy Evening at Valley View"
   "telescopes.md|Valley View telescopes"
-  "vv20260909/highlights.md|Valley View sky highlights — Sept 9–10, 2026"
+  "vv20260909/highlights.md|Valley View sky highlights — Wed Sept 9, 2026"
   "vv20260909/satellites.md|Satellite passes — Sept 9, 2026"
+  "vv20260910/highlights.md|Valley View sky highlights — Thu Sept 10, 2026"
   "vv20260910/satellites.md|Satellite passes — Sept 10, 2026"
 )
 

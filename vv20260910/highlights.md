@@ -1,4 +1,4 @@
-# Valley View sky highlights — Wednesday, Sept 9, 2026
+# Valley View sky highlights — Thursday, Sept 10, 2026
 
 *A short, easy tour. Full satellite list: [passes for tonight](satellites.md).
 The deep version: the full
@@ -8,11 +8,12 @@ The deep version: the full
 
 ## Tonight's sky
 
-**No Moon.** A 1%-lit crescent sets before sunset, so it's dark all night —
-under Valley View's [Bortle 2](https://en.wikipedia.org/wiki/Bortle_scale)
-skies, about as good as it gets. New Moon is tomorrow.
+**The darkest night of the month.** New Moon is tonight (exactly 9:27 p.m.), so
+there is no Moon at all — under Valley View's
+[Bortle 2](https://en.wikipedia.org/wiki/Bortle_scale) skies, about as dark as
+the sky ever gets.
 
-**Times (MDT):** sunset **7:20**, fully dark **8:50 p.m.**, first light **5:10 a.m.**
+**Times (MDT):** sunset **7:18**, fully dark **8:48 p.m.**, first light **5:11 a.m.**
 The sky keeps improving through the evening as the summer
 [Milky Way](https://en.wikipedia.org/wiki/Milky_Way) climbs higher.
 
@@ -41,7 +42,7 @@ The sky keeps improving through the evening as the summer
   different distances — Altair 17 light-years, Vega 25, Deneb over 1,500.
 
 - **[Andromeda Galaxy (M31)](https://en.wikipedia.org/wiki/Andromeda_Galaxy)**
-  clears the mountains to the east-northeast about **7:50 p.m.** To the naked
+  clears the mountains to the east-northeast about **7:45 p.m.** To the naked
   eye it's a faint grey smudge — but that smudge is a whole other galaxy, 2.5
   million light-years away, and the farthest thing you can see without a
   telescope. A long exposure through a good scope shows it spanning **about six
@@ -56,16 +57,18 @@ The sky keeps improving through the evening as the summer
 
 ## Satellites
 
-- **The Space Station
-  ([ISS](https://en.wikipedia.org/wiki/International_Space_Station))** —
-  a brilliant pass at **8:03 p.m.**, magnitude −3.8 (brighter than anything
-  else in the sky): up from the southwest, 66° high in the southeast, out in
-  the northeast. A second, lower, dimmer pass at 9:41.
 - **[Tiangong](https://en.wikipedia.org/wiki/Tiangong_space_station)**,
-  China's space station — **8:54 p.m.**, magnitude −2.2, from the
-  west-northwest to 74° up in the south.
+  China's space station — the night's best pass, right at dusk at **7:56 p.m.**,
+  magnitude −2.1, from the west-northwest almost overhead toward the north.
+  A second, low pass at 9:33.
+- **The Space Station
+  ([ISS](https://en.wikipedia.org/wiki/International_Space_Station))** manages
+  only a low, modest pass at **8:53 p.m.** (magnitude −1.6, 26° up in the
+  north).
+- **[Hubble](https://en.wikipedia.org/wiki/Hubble_Space_Telescope)** scrapes
+  the southern horizon around **8:59 p.m.**
 - Plus spent rocket bodies (the tumbling *SL‑16* Zenit stages sometimes flare)
-  and reconnaissance satellites at 2nd–3rd magnitude.
+  at 2nd–3rd magnitude.
 
 **→ [Full list of tonight's passes brighter than magnitude 3](satellites.md)**
 

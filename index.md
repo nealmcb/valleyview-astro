@@ -6,9 +6,10 @@ PlaneWave telescope, and a lot of universe.
 
 ## Nightly highlights
 
-- **[Sept 9–10, 2026](vv20260909/highlights.html)** — the short, easy version.
-  Satellite passes: [Tue Sept 9](vv20260909/satellites.html) ·
-  [Wed Sept 10](vv20260910/satellites.html)
+- **[Wednesday, Sept 9, 2026](vv20260909/highlights.html)**
+- **[Thursday, Sept 10, 2026](vv20260910/highlights.html)**
+
+Each night's page links to its full satellite-pass list.
 
 ## The full tour
 

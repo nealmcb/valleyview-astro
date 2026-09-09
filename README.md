@@ -12,11 +12,9 @@ Published at **https://nealmcb.github.io/valleyview-astro/**
   tour of the universe from the dark sky and the 20" scope, from the Moon out
   to the cosmic microwave background.
 - **[telescopes.md](telescopes.md)** — the three telescopes in the shed.
-- **[vv20260909/highlights.md](vv20260909/highlights.md)** — short highlights
-  for the nights of Sept 9–10, 2026.
-- **[vv20260909/satellites.md](vv20260909/satellites.md)**,
-  **[vv20260910/satellites.md](vv20260910/satellites.md)** — full satellite
-  pass lists for those two evenings.
+- **`vv20260909/`**, **`vv20260910/`** — per-night pages: `highlights.md`
+  (short, easy) and `satellites.md` (full Heavens-Above pass list) for the
+  evenings of Sept 9 and 10, 2026.
 
 ## Tools
 
