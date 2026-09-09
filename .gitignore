@@ -2,3 +2,4 @@
 bin/*.bsp
 *.bsp
 __pycache__/
+ha_default.html

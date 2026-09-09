@@ -3,25 +3,33 @@
 #
 # GitHub Pages here is served with .nojekyll, so we ship real .html files.
 # .md sources stay in the repo for reading/diffing on github.com.
+# Links between .md files are rewritten to .html by bin/mdlinks.lua.
 #
 # Usage:  bin/build_site.sh
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-CSS=assets/style.css
+# <src.md>  <page title>
+PAGES=(
+  "index.md|Valley View astronomy"
+  "astro-evening-vv.md|Astronomy Evening at Valley View"
+  "telescopes.md|Valley View telescopes"
+  "vv20260909/highlights.md|Valley View sky highlights — Sept 9–10, 2026"
+  "vv20260909/satellites.md|Satellite passes — Sept 9, 2026"
+  "vv20260910/satellites.md|Satellite passes — Sept 10, 2026"
+)
 
-render() {  # <src.md> <out.html> <title> <path-to-css>
-    pandoc --standalone --from markdown+pipe_tables --to html5 \
-        --metadata title="$3" \
-        --css "$4" \
-        --lua-filter "$(dirname "$0")/mdlinks.lua" \
-        -o "$2" "$1"
-    echo "  $1 -> $2"
-}
-
-mkdir -p assets
-render index.md                     index.html                     "Valley View astronomy"            "$CSS"
-render astro-evening-vv.md          astro-evening-vv.html          "Astronomy Evening at Valley View" "$CSS"
-render vv20260909/highlights.md     vv20260909/highlights.html     "Valley View sky highlights — Sept 9–10, 2026" "../$CSS"
-
+for entry in "${PAGES[@]}"; do
+  src="${entry%%|*}"; title="${entry#*|}"
+  out="${src%.md}.html"
+  # css path is relative to the page's directory
+  depth=$(tr -cd / <<<"$src" | wc -c)
+  css=""; for ((i=0; i<depth; i++)); do css+="../"; done; css+="assets/style.css"
+  pandoc --standalone --from markdown+pipe_tables --to html5 \
+    --metadata pagetitle="$title" \
+    --css "$css" \
+    --lua-filter "$(dirname "$0")/mdlinks.lua" \
+    -o "$out" "$src"
+  echo "  $src -> $out"
+done
 echo "done."
