@@ -37,8 +37,8 @@ The sky keeps improving through the evening as the summer
 - **The [Summer Triangle](https://en.wikipedia.org/wiki/Summer_Triangle)**,
   nearly overhead: [Vega](https://en.wikipedia.org/wiki/Vega),
   [Deneb](https://en.wikipedia.org/wiki/Deneb), and
-  [Altair](https://en.wikipedia.org/wiki/Altair). Same little triangle, wildly
-  different distances — Altair 17 light-years, Vega 25, Deneb over 1,500.
+  [Altair](https://en.wikipedia.org/wiki/Altair). One big triangle, three
+  wildly different distances — Altair 17 light-years, Vega 25, Deneb over 1,500.
 
 - **[Andromeda Galaxy (M31)](https://en.wikipedia.org/wiki/Andromeda_Galaxy)**
   clears the mountains to the east-northeast about **7:50 p.m.** To the naked
