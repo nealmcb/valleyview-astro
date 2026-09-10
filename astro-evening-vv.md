@@ -55,10 +55,10 @@ radiation from the Big Bang.
 - **Dark site:** [Bortle](https://en.wikipedia.org/wiki/Bortle_scale) 2 skies.
   - Compare to nearby Great Sand Dunes NP.
   - Naked-eye phenomena possible here:
-    - **Zodiacal light** (cone after dusk/dawn)
-    - **Gegenschein** (opposite the Sun at midnight)
-    - **Zodiacal band** stretching across ecliptic
-    - **Airglow** (green/red natural skyglow from upper atmosphere)
+    - **[Zodiacal light](https://en.wikipedia.org/wiki/Zodiacal_light)** (cone after dusk/dawn)
+    - **[Gegenschein](https://en.wikipedia.org/wiki/Gegenschein)** (opposite the Sun at midnight)
+    - **[Zodiacal band](https://en.wikipedia.org/wiki/Zodiacal_light#Zodiacal_band)** stretching across ecliptic
+    - **[Airglow](https://en.wikipedia.org/wiki/Airglow)** (green/red natural skyglow from upper atmosphere)
 	- **Clouds look black** not lit from below
     - **Dark nebulae** in the Milky Way
     - **Milky Way shadows** on the ground
