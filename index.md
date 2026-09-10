@@ -21,6 +21,12 @@ Each night's page links to its full satellite-pass list.
 
 - **[The Valley View telescopes](telescopes.html)** — including the amazing 20" Planewave.
 
+## Credits
+
+The telescopes and dark-sky observing program at Valley View were set up by
+**Cosmic Mark Cunningham** and the
+**[Orient Land Trust](https://www.facebook.com/OrientLandTrust)**.
+
 ---
 
 <small>Source: <https://github.com/nealmcb/valleyview-astro></small>
