@@ -76,8 +76,7 @@ The sky keeps improving through the evening as the summer
 
 ## In the telescope
 
-Through one of the [three telescopes](../telescopes.md) in the shed — the 20"
-PlaneWave for the faint stuff:
+Mostly the 20" [PlaneWave](../telescopes.md):
 
 - **[Ring Nebula (M57)](https://en.wikipedia.org/wiki/Ring_Nebula)** — nearly
   straight up all evening. A blue-green smoke ring: the puffed-off outer layers
